@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CTSimulator</title>
+
+</head>
+<style>
+    body {
+        background-image: url("https://vemqueteconto.files.wordpress.com/2017/10/calendario-2018.jpg?w=840");
+    }
+
+    #imglogo {
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    .logoutbutton {
+        background-color: lightgray;
+        color: black;
+        padding: 7px 7px;
+        margin: 8px -2px;
+        border: 1px solid black;
+        cursor: pointer;
+        width: 20%;
+        margin-left: 20%;
+        border-radius: 10px;
+        margin-top: 10%;
+    }
+
+    .speedbutton {
+        white-space: normal;
+    }
+
+    .logoutinput {
+        width: 100%;
+        padding: 7px 15px;
+        margin: 7px -2px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: lightgray;
+    }
+
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+    }
+
+
+    .container {
+        padding: 10px;
+        margin-top: 10%;
+    }
+
+    .modal {
+        margin-left: 32%;
+        margin-top: 10%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 30%;
+        height: 50%;
+        background-color: inherit;
+    }
+
+
+    .modal-content {
+        position: absolute;
+        background-color: #211D3E;
+        margin: 4px 55px;
+        border: 1px solid #888;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    #title {
+        background: white;
+        margin-top: -1.1em;
+        border-radius: 10px;
+    }
+
+    .title {
+        margin-left: 40%;
+    }
+    .color{
+        font-size: 105%;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+</style>
+
+<body>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="javascript:;" onsubmit="myFunction(this);">
+            <div id="title">
+
+            </div>
+            <img id="imglogo" src="https://mastertech.com.br/Assets/img/logo-mastertech-250px.png">
+            <div class="imgcontainer">
+
+            </div>
+
+            <div class="container">
+                <label><b class="color">Username</b></label>
+                <input id="usernamefunc" type="text" class="logoutinput" placeholder="Enter Username" name="username" required/>
+
+                <label><b class="color">Password</b></label>
+                <input id="passwordfunc" type="password" class="logoutinput" placeholder="Enter Password" name="password" required/>
+
+                <button class="logoutbutton" type="submit">Login</button>
+                <button class="logoutbutton" type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+<script src="js.js"></script>
+
+</html>
